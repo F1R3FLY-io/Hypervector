@@ -1,20 +1,23 @@
-ThisBuild / version := "0.2.0"
+ThisBuild / version := "0.2.0.1"
 
 ThisBuild / versionScheme := Some("early-semver")
 
-ThisBuild / scalaVersion := "3.2.1-RC1-bin-20220904-b5fea82-NIGHTLY"
+//ThisBuild / scalaVersion := "3.2.1-RC1-bin-20220904-b5fea82-NIGHTLY"
+ThisBuild / scalaVersion := "3.3.1"
 
 ThisBuild / publishMavenStyle := true
 //ThisBuild / publish / skip := true
 ThisBuild / publishTo := Some(
-  "GitHub Package Registry " at "https://maven.pkg.github.com/leithaus/Hypervector"
+  "GitHub Package Registry " at "https://maven.pkg.github.com/F1R3FLY-io/Hypervector"
 )
 ThisBuild / credentials += Credentials(
   "GitHub Package Registry", // realm
   "maven.pkg.github.com", // host
   "leithaus", // user
               //sys.env.getOrElse("GITHUB_TOKEN", "abc123")
-  "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" // password
+              //"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" // password
+              //"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"
+  "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"
 )
 
 //resolvers += Resolver.sonatypeOssRepos("snapshots")
